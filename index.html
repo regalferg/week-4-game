@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Crystal Collector</title>
+	    <!-- Added link to the jQuery Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Added a link to Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Macondo" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12  content-color">
+			<div class="page-header">
+					<h1>Crystal Collector</h1>
+
+				</div> <!-- END HEADER -->
+
+
+<div class="row">
+
+	<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12  content-color">
+		<p>Your will be given a random number at the start of the game.</p>
+		<p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+		<p>You win the game by matching your total score to a random number, you lose the game if your score goes above the random number.</p>
+		<p>The value of each crystal is hidden from  you until you click on it.</p>
+		<p>Each time when the game starts, the game will change the value of each crystal.</p>
+
+		 </div> <!-- END ROW 1 COL 2 -->
+
+</div> <!-- END SUB ROW 1 -->
+
+		</div> <!-- END HEADER COL -->
+		</div> <!-- END ROW 1 -->
+<div class="row">
+		<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12  content-color">
+			
+
+
+			<div class="row">
+
+
+<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6  content-color"> 
+				<div class="class random-box">
+					<label>Random Number</label><h1 id="random-number"></h1>
+				
+			</div> <!-- END RANDOM NUMBER FIELD -->
+
+</div> <!-- END ROW 2 SUB ROW 1 COL 1 -->
+<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6  content-color">
+	<div class="class ratio-box">
+		<p id="win-ratio"> win here</p>
+		<p id="loss-ratio"> losses here</p>
+
+		
+	</div> <!-- END WIN RATIO
+ -->
+ </div> <!-- END ROW 2 SUB ROW 1 COL 2 -->
+
+			 </div> <!-- END ROW 2 SUB ROW 1 -->
+
+		 </div> <!-- END ROW 2 COL 1 -->
+
+
+</div> <!-- END ROW 2 -->
+
+<div class="row">
+	<div class="col-lg-4 col-md-6 col-sm-6 col-xs-6 content-color"> 
+				<div class="class gem-buttons">
+ <input type="image" src="assets/images/100x100.png" id="crystal-1" class="crystal" />
+ <input type="image" src="assets/images/100x100_2.png" id="crystal-two" class="crystal" />
+ <input type="image" src="assets/images/100x100_3.png" id="crystal-three" class="crystal" />
+ <input type="image" src="assets/images/100x100_4.png" id="crystal-four" class="crystal" />
+
+				
+			</div> <!-- END GEM BUTTONS -->
+
+</div> <!-- END ROW 3  COL 1 -->
+<div class="col-lg-8 col-md-6 col-sm-6 col-xs-6  content-color"> 
+				<div class="class score-box">
+				<label>Total Score</label><h1 id="total-score">Score goes here</h1>
+			</div> <!-- END SCORE TOTAL-->
+
+</div> <!-- END ROW 3 COL 2 -->
+
+</div> <!-- END ROW 3 -->
+
+	
+
+
+</div> <!-- END CONTAINER -->
+
+
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>
+</html>
