@@ -3,5 +3,60 @@ background: url("../images/caveBackground.jpg");
 font-family: 'Macondo', cursive;
 color: #ffffff;
 
+}
+
+.responsive {
+ 	padding: 0 6px;
+    max-width: 20%;
+    float: left;
+}
+
+
 
 }
+
+@media handheld, screen and (max-width: 720px) {
+.col-xs-8 {
+    width: 50%;
+}
+.col-xs-4 {
+    width: 50%;
+}
+
+
+
+}
+
+@media only screen and (max-width: 1440px){
+    .responsive {
+        max-width: 25%;
+        margin: 6px 0;
+    }
+}
+
+
+@media only screen and (max-width: 991px){
+    .responsive {
+        max-width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+
+
+
+
+
+@media only screen and (max-width: 700px){
+    .responsive {
+        max-width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .responsive {
+        max-width: 50%;
+    }
+}
+
