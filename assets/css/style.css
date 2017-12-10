@@ -4,6 +4,9 @@ font-family: 'Macondo', cursive;
 color: #ffffff;
 
 }
+audio{
+	display: none;
+}
 
 .responsive {
  	padding: 0 6px;
