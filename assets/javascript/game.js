@@ -19,72 +19,14 @@ var total;
 
 $(document).ready(function(){
 
- randomNumber = getRandomIntInclusive(19,120);
- buttonRandom1 = getRandomIntInclusive(1,12);
- buttonRandom2 = getRandomIntInclusive(1,12);
- buttonRandom3 = getRandomIntInclusive(1,12);
-buttonRandom4 = getRandomIntInclusive(1,12);
-	totalScore = 0;
+resetGame();	
 
-//Game Reset
-function resetGame(){
-	randomNumber = getRandomIntInclusive(19,120);
-	 buttonRandom1 = getRandomIntInclusive(1,12);
- buttonRandom2 = getRandomIntInclusive(1,12);
- buttonRandom3 = getRandomIntInclusive(1,12);
-buttonRandom4 = getRandomIntInclusive(1,12);
-	totalScore = 0;
-	
-
-
-// function getRandomIntInclusive(min, max) {
-//   min = Math.ceil(min);
-//   max = Math.floor(max);
-//   return Math.floor(Math.random() * (max - min + 1)) + min; 
-// }
-$("#total-score").text(total);
-$("#random-number").text(randomNumber);
-
-
-}; //END of RESET
-
-
-//Updates Random Number
-
-function getRandomIntInclusive(min, max) {
-  min = Math.ceil(min);
-  max = Math.floor(max);
-  return Math.floor(Math.random() * (max - min + 1)) + min; 
-}
-
-function scores(){
-	 total = $("#total-score").text();
-	  random= $("#random-number").text();
-
-	if (total == random && total > 0 ) {
-		wins++;
-		
-		resetGame();
-
-	console.log("match! " + " Total= " + total + " Random= " + random );
-	$("#loss-ratio").text("Loss: " + losses)
-	$("#win-ratio").text("Wins: " + wins);
-
-}
- if (total > random) {
-	losses++;
-	
-	resetGame();
-
-
-	console.log("Total= " + total + " Random= " + random );
-	$("#loss-ratio").text("Loss: " + losses);
-
-}
-
-
-} //END OF SCORES
-
+//  randomNumber = getRandomIntInclusive(19,120);
+//  buttonRandom1 = getRandomIntInclusive(1,12);
+//  buttonRandom2 = getRandomIntInclusive(1,12);
+//  buttonRandom3 = getRandomIntInclusive(1,12);
+// buttonRandom4 = getRandomIntInclusive(1,12);
+// totalScore = 0;
 
 
 $("#random-number").text(randomNumber);
@@ -128,48 +70,64 @@ totalScore = totalScore + buttonRandom4;
  });
 
 
-// function convertWins(){
-// 	var updateWins = $("#total-score").text();
-// }
-
-//Win Ratio
-
-// totalScore = parseInt(totalScore);
-// randomNumber = parseInt(randomNumber);
 
 
 
-
-
-// 	if (ifWin == ifLose && ifWin > 0) {
-// 		win++
-
-// 	console.log("match!")
-// 	$("#win-ratio").text("Wins: " + wins);
-
-// }
-//  if (ifWin < ifLose) {
-// 	losses++;
-// 	$("#loss-ratio").text("Loss: " + losses);
-
-// }
+//Game Reset
+function resetGame(){
+	randomNumber = getRandomIntInclusive(19,120);
+	buttonRandom1 = getRandomIntInclusive(1,12);
+ 	buttonRandom2 = getRandomIntInclusive(1,12);
+ 	buttonRandom3 = getRandomIntInclusive(1,12);
+	buttonRandom4 = getRandomIntInclusive(1,12);
+	totalScore = 0;
+	
 
 
 
+$("#total-score").text(total);
+$("#random-number").text(randomNumber);
 
 
+}; //END of RESET
 
 
+//Updates Random Number
+
+function getRandomIntInclusive(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min + 1)) + min; 
+}
+
+function scores(){
+	 total = parseInt( $("#total-score").text());
+	  random= parseInt( $("#random-number").text());
+
+	if (total == random && total > 0 ) {
+		wins++;
+		
+		resetGame();
+
+	console.log("match! " + " Total= " + total + " Random= " + random );
+	$("#loss-ratio").text("Loss: " + losses)
+	$("#win-ratio").text("Wins: " + wins);
+
+}
+
+ if (total > random) {
+	losses++;
+	
+	resetGame();
 
 
+	console.log("Total= " + total + " Random= " + random );
+	$("#loss-ratio").text("Loss: " + losses);
+
+}
 
 
-
-
-
-
-
-
+} //END OF SCORES
 
 
 
