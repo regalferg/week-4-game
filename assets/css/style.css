@@ -4,9 +4,9 @@ font-family: 'Macondo', cursive;
 color: #ffffff;
 
 }
-audio{
+/* audio{
 	display: none;
-}
+} */
 
 .responsive {
  	padding: 0 6px;
@@ -16,7 +16,7 @@ audio{
 
 
 
-}
+
 
 @media handheld, screen and (max-width: 720px) {
 .col-xs-8 {
