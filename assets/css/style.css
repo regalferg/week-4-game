@@ -4,9 +4,9 @@ font-family: 'Macondo', cursive;
 color: #ffffff;
 
 }
-/* audio{
-	display: none;
-} */
+audio{
+	display: true;
+}
 
 .responsive {
  	padding: 0 6px;
